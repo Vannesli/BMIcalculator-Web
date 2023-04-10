@@ -1,0 +1,356 @@
+body{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+span{
+    color: red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: #506E79;
+    background: #FFE688;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 300px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    display: block;
+    color: #506E79;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #506E79;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background: #506E79;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #506E79;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+    
+}
+
+
+
+
+.banner-home{
+    background-color: #FFF5D2;
+    height: 200px;
+    color :#506E79;
+}
+.banner-home h1{
+    padding-left:400px;
+    padding-top: 50px;
+}
+.banner-home p{
+    padding-left: 400px;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+    .banner-home h1{
+        padding-left:10px;
+        padding-top: 50px;
+    }
+    .banner-home p{
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+}
+
+
+/* BMI */
+.headertext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 300px;
+    width: 100vw;
+    padding: 50px;
+}
+.headertext img{
+    height: 200px;
+    margin-top: 10px;
+}
+.headertext h1{
+    color: #506E79;
+    margin-bottom: 10px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 30px;
+    width: 300px;
+    background: #FFF5D2;
+    color: #506E79;
+    border-radius: 20px
+}
+.wrapper p{
+    padding-bottom: 20px;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 130px;
+}
+button{
+    color: white;
+    padding: 10px;
+    background: #506E79;
+    border-radius: 10px;
+    width: 230px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-color: transparent;
+}
+#refresh{
+    color: #506E79;
+    padding: 10px;
+    border-radius: 10px;
+    width: 230px;
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+#output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* about */
+.info{
+    background-color:white;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    padding: 50px;
+}
+.banner{
+    width: fit-content
+    height: auto;
+}
+.banner > img{
+    height: 500px;
+}
+@media only screen and (max-width: 900px) {
+    .banner > img{
+        height: 150px;
+    }
+    .tulisan > h1{
+
+    }
+}
+.tulisan{
+    
+}
+.tulisan > h1{
+    background-color: #FFE688;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.tulisan > p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#Coba{
+    background-color: #506E79;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+/* Tips */
+.all{
+    display: flex;
+    flex-direction: row;
+}
+.banner-tips{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-tips img{
+    width: 100%;
+    margin-right: 100px;
+    
+}
+.tips{
+    display: flex;
+    width: 100vw;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.over-weight{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+}
+.over-weight h1{
+    background-color: #FFE688;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.over-weight p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.Normal{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: ;
+    margin-top: 20px;
+}
+.Normal h1{
+    background-color: #FFE688;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.Normal p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.Under-Weight{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+}
+.Under-Weight h1{
+    background-color: #FFE688;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.Under-Weight p{
+    text-align: justify;
+    margin-bottom: 20px;
+}

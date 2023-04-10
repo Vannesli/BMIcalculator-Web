@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <h1>BMI<i>calculator</i></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="tips.html">Tips</a>
+                    </li>
+                </ul>
+                <div class="login-signup">
+                    <a href="">Login</a> or <a href="">Signup</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+
+<div class="banner-home">
+    <h1>Kalkulator BMI(IMT)</h1>
+    <p>Gunakan kalkulator ini untuk memeriksa Indeks Massa<br>Tubuh (IMT) dan mengecek apakah berat badan Anda<br>ideal atau tidak. Anda juga dapat menggunakannya<br>untuk memeriksa indeks massa tubuh anak.</p>
+</div>
+
+<div class="container">
+    <div class="headertext">
+        <img src="assets/cat.png">
+        <h1> Check Your BMI </h1>
+        <p>Enter your weight and height below to check your BMI Results</p>
+    </div>
+
+    <div class="wrapper">
+        <p>Height in CM:
+            <input type="text" id="height"><br><span id="height_error"></span>
+        </p>
+
+        <p>Weight in KG:
+            <input type="text" id="weight"><br><span id="weight_error"></span>
+        </p>
+
+        <button id="btn">Calculate</button>
+        <a href="index.html" id="refresh">Refresh</a>
+
+        <p id="output">Your BMI Results is : </p>
+        <div id="list-gambar">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
