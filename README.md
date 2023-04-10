@@ -1,7 +1,7 @@
 # BMIcalculator-Web
 Website Perhitungan Body Mass Index berbasis HTML, CSS, JavaScript
 
-How to run
+How to run <br>
 Clone / download zip folder 
 Jangan lupa folder assets karena seluruh gambar ada disana
 Lakukan run seperti biasa
